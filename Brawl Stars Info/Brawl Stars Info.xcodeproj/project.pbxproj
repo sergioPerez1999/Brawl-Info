@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12ADF42A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift */; };
+		EB12ADF92A79118C00C4CA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB12ADF82A79118C00C4CA53 /* Assets.xcassets */; };
+		EB12ADFC2A79118C00C4CA53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB12ADFB2A79118C00C4CA53 /* Preview Assets.xcassets */; };
+		EB12AE062A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */; };
+		EB12AE102A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE0F2A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift */; };
+		EB12AE122A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE112A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift */; };
+		EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE222A79121A00C4CA53 /* InitView.swift */; };
+		EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE322A7914E200C4CA53 /* HomeView.swift */; };
+		EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE352A791A5500C4CA53 /* RootView.swift */; };
+		EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */; };
+		EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */; };
+		EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */; };
+		EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */; };
+		EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */; };
+		EB93A7192A7933DE00DDD74D /* Brawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7182A7933DE00DDD74D /* Brawler.swift */; };
+		EB93A71B2A79359200DDD74D /* Clase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A71A2A79359200DDD74D /* Clase.swift */; };
+		EB93A71D2A79364700DDD74D /* BrawlerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A71C2A79364700DDD74D /* BrawlerList.swift */; };
+		EB93A7202A79371000DDD74D /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A71F2A79371000DDD74D /* Rarity.swift */; };
+		EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7212A7937B700DDD74D /* StarPower.swift */; };
+		EB93A7242A79385300DDD74D /* Gadget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7232A79385300DDD74D /* Gadget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB12AE022A79118C00C4CA53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB12ADE92A79118B00C4CA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB12ADF02A79118B00C4CA53;
+			remoteInfo = "Brawl Stars Info";
+		};
+		EB12AE0C2A79118C00C4CA53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB12ADE92A79118B00C4CA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB12ADF02A79118B00C4CA53;
+			remoteInfo = "Brawl Stars Info";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB12ADF12A79118B00C4CA53 /* Brawl Stars Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brawl Stars Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB12ADF42A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoApp.swift; sourceTree = "<group>"; };
+		EB12ADF82A79118C00C4CA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB12ADFB2A79118C00C4CA53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB12AE012A79118C00C4CA53 /* Brawl Stars InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brawl Stars InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoTests.swift; sourceTree = "<group>"; };
+		EB12AE0B2A79118C00C4CA53 /* Brawl Stars InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brawl Stars InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB12AE0F2A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoUITests.swift; sourceTree = "<group>"; };
+		EB12AE112A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB12AE222A79121A00C4CA53 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
+		EB12AE322A7914E200C4CA53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB12AE352A791A5500C4CA53 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
+		EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		EB93A7182A7933DE00DDD74D /* Brawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawler.swift; sourceTree = "<group>"; };
+		EB93A71A2A79359200DDD74D /* Clase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clase.swift; sourceTree = "<group>"; };
+		EB93A71C2A79364700DDD74D /* BrawlerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerList.swift; sourceTree = "<group>"; };
+		EB93A71F2A79371000DDD74D /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
+		EB93A7212A7937B700DDD74D /* StarPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPower.swift; sourceTree = "<group>"; };
+		EB93A7232A79385300DDD74D /* Gadget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gadget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB12ADEE2A79118B00C4CA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12ADFE2A79118C00C4CA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12AE082A79118C00C4CA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB12ADE82A79118B00C4CA53 = {
+			isa = PBXGroup;
+			children = (
+				EB12ADF32A79118B00C4CA53 /* Brawl Stars Info */,
+				EB12AE042A79118C00C4CA53 /* Brawl Stars InfoTests */,
+				EB12AE0E2A79118C00C4CA53 /* Brawl Stars InfoUITests */,
+				EB12ADF22A79118B00C4CA53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB12ADF22A79118B00C4CA53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB12ADF12A79118B00C4CA53 /* Brawl Stars Info.app */,
+				EB12AE012A79118C00C4CA53 /* Brawl Stars InfoTests.xctest */,
+				EB12AE0B2A79118C00C4CA53 /* Brawl Stars InfoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB12ADF32A79118B00C4CA53 /* Brawl Stars Info */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE1E2A7911BD00C4CA53 /* Presentation */,
+				EB12AE252A79124E00C4CA53 /* Domain */,
+				EB12AE242A79124A00C4CA53 /* Data */,
+				EB12AE1F2A7911C600C4CA53 /* App */,
+			);
+			path = "Brawl Stars Info";
+			sourceTree = "<group>";
+		};
+		EB12ADFA2A79118C00C4CA53 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB12ADFB2A79118C00C4CA53 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB12AE042A79118C00C4CA53 /* Brawl Stars InfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */,
+			);
+			path = "Brawl Stars InfoTests";
+			sourceTree = "<group>";
+		};
+		EB12AE0E2A79118C00C4CA53 /* Brawl Stars InfoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE0F2A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift */,
+				EB12AE112A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift */,
+			);
+			path = "Brawl Stars InfoUITests";
+			sourceTree = "<group>";
+		};
+		EB12AE1E2A7911BD00C4CA53 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE342A791A4700C4CA53 /* Root */,
+				EB12AE312A7914D300C4CA53 /* Home */,
+				EB12AE212A79120B00C4CA53 /* Init */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EB12AE1F2A7911C600C4CA53 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB12ADF42A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift */,
+				EB12ADFA2A79118C00C4CA53 /* Preview Content */,
+				EB12AE202A7911CC00C4CA53 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB12AE202A7911CC00C4CA53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB12ADF82A79118C00C4CA53 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB12AE212A79120B00C4CA53 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE222A79121A00C4CA53 /* InitView.swift */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		EB12AE242A79124A00C4CA53 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7052A79269000DDD74D /* Local */,
+				EB93A6FF2A7923ED00DDD74D /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EB12AE252A79124E00C4CA53 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE262A79125C00C4CA53 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EB12AE262A79125C00C4CA53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7182A7933DE00DDD74D /* Brawler.swift */,
+				EB93A71A2A79359200DDD74D /* Clase.swift */,
+				EB93A71C2A79364700DDD74D /* BrawlerList.swift */,
+				EB93A71F2A79371000DDD74D /* Rarity.swift */,
+				EB93A7212A7937B700DDD74D /* StarPower.swift */,
+				EB93A7232A79385300DDD74D /* Gadget.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB12AE312A7914D300C4CA53 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE322A7914E200C4CA53 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB12AE342A791A4700C4CA53 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EB12AE352A791A5500C4CA53 /* RootView.swift */,
+				EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EB93A6FF2A7923ED00DDD74D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7002A7923FE00DDD74D /* DataSource */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		EB93A7002A7923FE00DDD74D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */,
+				EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EB93A7052A79269000DDD74D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
+				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB12ADF02A79118B00C4CA53 /* Brawl Stars Info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB12AE152A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars Info" */;
+			buildPhases = (
+				EB12ADED2A79118B00C4CA53 /* Sources */,
+				EB12ADEE2A79118B00C4CA53 /* Frameworks */,
+				EB12ADEF2A79118B00C4CA53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brawl Stars Info";
+			productName = "Brawl Stars Info";
+			productReference = EB12ADF12A79118B00C4CA53 /* Brawl Stars Info.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB12AE002A79118C00C4CA53 /* Brawl Stars InfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB12AE182A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars InfoTests" */;
+			buildPhases = (
+				EB12ADFD2A79118C00C4CA53 /* Sources */,
+				EB12ADFE2A79118C00C4CA53 /* Frameworks */,
+				EB12ADFF2A79118C00C4CA53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB12AE032A79118C00C4CA53 /* PBXTargetDependency */,
+			);
+			name = "Brawl Stars InfoTests";
+			productName = "Brawl Stars InfoTests";
+			productReference = EB12AE012A79118C00C4CA53 /* Brawl Stars InfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB12AE0A2A79118C00C4CA53 /* Brawl Stars InfoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB12AE1B2A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars InfoUITests" */;
+			buildPhases = (
+				EB12AE072A79118C00C4CA53 /* Sources */,
+				EB12AE082A79118C00C4CA53 /* Frameworks */,
+				EB12AE092A79118C00C4CA53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB12AE0D2A79118C00C4CA53 /* PBXTargetDependency */,
+			);
+			name = "Brawl Stars InfoUITests";
+			productName = "Brawl Stars InfoUITests";
+			productReference = EB12AE0B2A79118C00C4CA53 /* Brawl Stars InfoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB12ADE92A79118B00C4CA53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EB12ADF02A79118B00C4CA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EB12AE002A79118C00C4CA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EB12ADF02A79118B00C4CA53;
+					};
+					EB12AE0A2A79118C00C4CA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EB12ADF02A79118B00C4CA53;
+					};
+				};
+			};
+			buildConfigurationList = EB12ADEC2A79118B00C4CA53 /* Build configuration list for PBXProject "Brawl Stars Info" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB12ADE82A79118B00C4CA53;
+			productRefGroup = EB12ADF22A79118B00C4CA53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB12ADF02A79118B00C4CA53 /* Brawl Stars Info */,
+				EB12AE002A79118C00C4CA53 /* Brawl Stars InfoTests */,
+				EB12AE0A2A79118C00C4CA53 /* Brawl Stars InfoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB12ADEF2A79118B00C4CA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB12ADFC2A79118C00C4CA53 /* Preview Assets.xcassets in Resources */,
+				EB12ADF92A79118C00C4CA53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12ADFF2A79118C00C4CA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12AE092A79118C00C4CA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB12ADED2A79118B00C4CA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */,
+				EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */,
+				EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */,
+				EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */,
+				EB93A71D2A79364700DDD74D /* BrawlerList.swift in Sources */,
+				EB93A7192A7933DE00DDD74D /* Brawler.swift in Sources */,
+				EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */,
+				EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */,
+				EB93A7242A79385300DDD74D /* Gadget.swift in Sources */,
+				EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */,
+				EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */,
+				EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */,
+				EB93A71B2A79359200DDD74D /* Clase.swift in Sources */,
+				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
+				EB93A7202A79371000DDD74D /* Rarity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12ADFD2A79118C00C4CA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB12AE062A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB12AE072A79118C00C4CA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB12AE102A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift in Sources */,
+				EB12AE122A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB12AE032A79118C00C4CA53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB12ADF02A79118B00C4CA53 /* Brawl Stars Info */;
+			targetProxy = EB12AE022A79118C00C4CA53 /* PBXContainerItemProxy */;
+		};
+		EB12AE0D2A79118C00C4CA53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB12ADF02A79118B00C4CA53 /* Brawl Stars Info */;
+			targetProxy = EB12AE0C2A79118C00C4CA53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB12AE132A79118C00C4CA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB12AE142A79118C00C4CA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB12AE162A79118C00C4CA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brawl Stars Info/App/Preview Content\"";
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-Info";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB12AE172A79118C00C4CA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brawl Stars Info/App/Preview Content\"";
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-Info";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB12AE192A79118C00C4CA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brawl Stars Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brawl Stars Info";
+			};
+			name = Debug;
+		};
+		EB12AE1A2A79118C00C4CA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brawl Stars Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brawl Stars Info";
+			};
+			name = Release;
+		};
+		EB12AE1C2A79118C00C4CA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-InfoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brawl Stars Info";
+			};
+			name = Debug;
+		};
+		EB12AE1D2A79118C00C4CA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7JG3GKCV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sergioperez.Brawl-Stars-InfoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brawl Stars Info";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB12ADEC2A79118B00C4CA53 /* Build configuration list for PBXProject "Brawl Stars Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB12AE132A79118C00C4CA53 /* Debug */,
+				EB12AE142A79118C00C4CA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB12AE152A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB12AE162A79118C00C4CA53 /* Debug */,
+				EB12AE172A79118C00C4CA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB12AE182A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars InfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB12AE192A79118C00C4CA53 /* Debug */,
+				EB12AE1A2A79118C00C4CA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB12AE1B2A79118C00C4CA53 /* Build configuration list for PBXNativeTarget "Brawl Stars InfoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB12AE1C2A79118C00C4CA53 /* Debug */,
+				EB12AE1D2A79118C00C4CA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB12ADE92A79118B00C4CA53 /* Project object */;
+}
