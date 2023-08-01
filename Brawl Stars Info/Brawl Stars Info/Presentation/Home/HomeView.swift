@@ -9,18 +9,29 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var rootViewModel: RootViewModel
+    @ObservedObject var homeViewModel: HomeViewModel
+    
+    init(homeViewModel: HomeViewModel) {
+        self.homeViewModel = homeViewModel
+    }
     var body: some View {
         VStack {
             Button("Salir") {
                 rootViewModel.goToHome()
             }
-            Text("Home View")
+            NavigationStack {
+                List {
+                    ForEach(homeViewModel.brawlers) { brawler in
+                        NavigationLink {
+                            BrawlerDetailView(brawler: brawler)
+                        } label: {
+                            BrawlerCellView(brawler: brawler)
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}

@@ -17,6 +17,10 @@
 		EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE322A7914E200C4CA53 /* HomeView.swift */; };
 		EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE352A791A5500C4CA53 /* RootView.swift */; };
 		EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */; };
+		EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */; };
+		EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */; };
+		EB4F79DF2A79733D00051AE5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */; };
+		EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */; };
 		EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */; };
 		EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */; };
 		EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */; };
@@ -60,6 +64,10 @@
 		EB12AE322A7914E200C4CA53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB12AE352A791A5500C4CA53 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerCellView.swift; sourceTree = "<group>"; };
+		EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerDetailView.swift; sourceTree = "<group>"; };
 		EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
 		EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 		EB12AE1E2A7911BD00C4CA53 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EB4F79E02A7976F200051AE5 /* BrawlerDetail */,
 				EB12AE342A791A4700C4CA53 /* Root */,
 				EB12AE312A7914D300C4CA53 /* Home */,
 				EB12AE212A79120B00C4CA53 /* Init */,
@@ -201,6 +210,7 @@
 		EB12AE252A79124E00C4CA53 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EB4F79DA2A79718F00051AE5 /* Utils */,
 				EB12AE262A79125C00C4CA53 /* Models */,
 			);
 			path = Domain;
@@ -222,7 +232,9 @@
 		EB12AE312A7914D300C4CA53 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EB4F79D72A796E1000051AE5 /* Cell */,
 				EB12AE322A7914E200C4CA53 /* HomeView.swift */,
+				EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -234,6 +246,38 @@
 				EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		EB4F79D72A796E1000051AE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EB4F79DA2A79718F00051AE5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F79DB2A79719500051AE5 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EB4F79DB2A79719500051AE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB4F79E02A7976F200051AE5 /* BrawlerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */,
+			);
+			path = BrawlerDetail;
 			sourceTree = "<group>";
 		};
 		EB93A6FF2A7923ED00DDD74D /* Remote */ = {
@@ -393,19 +437,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */,
+				EB4F79DF2A79733D00051AE5 /* HomeViewModel.swift in Sources */,
 				EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */,
 				EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */,
 				EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */,
 				EB93A71D2A79364700DDD74D /* BrawlerList.swift in Sources */,
 				EB93A7192A7933DE00DDD74D /* Brawler.swift in Sources */,
+				EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */,
 				EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */,
 				EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */,
 				EB93A7242A79385300DDD74D /* Gadget.swift in Sources */,
 				EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */,
+				EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */,
 				EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */,
 				EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */,
 				EB93A71B2A79359200DDD74D /* Clase.swift in Sources */,
 				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
+				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
 				EB93A7202A79371000DDD74D /* Rarity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

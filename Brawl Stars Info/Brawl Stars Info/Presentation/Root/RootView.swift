@@ -10,7 +10,6 @@ import SwiftUI
 struct RootView: View {
     
     @EnvironmentObject var rootViewModel: RootViewModel
-    
     var body: some View {
         switch (rootViewModel.status) {
             
@@ -24,7 +23,7 @@ struct RootView: View {
             Text("Error \(errorString)")
             
         case .loaded:
-            HomeView()
+            HomeView(homeViewModel: HomeViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
         }
         
     }

@@ -24,7 +24,7 @@ struct InitView: View {
                     .fontWeight(.bold)
                 
                 Button("Get Info") {
-                    rootViewModel.getInformation()
+                    rootViewModel.getBrawlers()
                 }
             }
             .padding(20)
