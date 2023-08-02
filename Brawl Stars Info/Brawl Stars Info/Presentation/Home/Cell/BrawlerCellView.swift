@@ -74,6 +74,7 @@ struct BrawlerCellView_Previews: PreviewProvider {
         BrawlerCellView(brawler:
                 .init(id: 16000000,
                       name: "Shelly",
+                      link: URL(string: "https://brawlify.com/brawlers/detail/Shelly")!,
                       imageUrl: URL(string: "https://cdn-old.brawlify.com/brawler/Shelly.png")!,
                       class: .init(name: "Damage Dealer"),
                       rarity: .init(name: "Common", color: "#b9eaff"),

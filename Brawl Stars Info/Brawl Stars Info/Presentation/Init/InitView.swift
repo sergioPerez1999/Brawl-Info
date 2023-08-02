@@ -15,7 +15,7 @@ struct InitView: View {
         ZStack {
             Image("fondo-inicio")
                 .resizable()
-                .opacity(0.8)
+                .opacity(0.9)
                 .ignoresSafeArea()
             VStack {
                 Text("Brawl Stars Info")
@@ -24,7 +24,7 @@ struct InitView: View {
                     .fontWeight(.bold)
                 
                 Button("Get Info") {
-                    rootViewModel.getBrawlers()
+                    rootViewModel.getInformation()
                 }
             }
             .padding(20)

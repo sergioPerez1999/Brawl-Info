@@ -23,7 +23,7 @@ struct RootView: View {
             Text("Error \(errorString)")
             
         case .loaded:
-            HomeView(homeViewModel: HomeViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
+            TabBarView()
         }
         
     }

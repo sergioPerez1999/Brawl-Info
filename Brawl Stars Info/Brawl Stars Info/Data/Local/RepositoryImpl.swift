@@ -9,15 +9,15 @@ import Foundation
 
 
 final class RepositoryImpl: RepositoryProtocol {
+    
     private let remoteDataSource: RemoteDataSourceProtocol
     
     init(remoteDataSource: RemoteDataSourceProtocol) {
         self.remoteDataSource = remoteDataSource
     }
     
-    func getBrawlers() async throws -> BrawlerList {
-        return try await remoteDataSource.getBrawlers()
+    func getBrawlers() async throws -> [Brawler] {
+        return try await remoteDataSource.getBrawlers().list
     }
-    
     
 }

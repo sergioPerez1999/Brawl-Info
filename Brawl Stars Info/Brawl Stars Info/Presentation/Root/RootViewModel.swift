@@ -13,15 +13,26 @@ enum Status {
 }
 
 final class RootViewModel: ObservableObject {
+    let repository: RepositoryProtocol
     @Published var status = Status.primary
-    @Published var heroes: [Brawler] = []
+    @Published var brawlers: [Brawler] = []
+    @Published var maps: [Mapa] = []
+    @Published var games: [Game] = []
     
-    init(status: Status = Status.primary) {
-        self.status = status
+    init(repository: RepositoryProtocol) {
+        self.repository = repository
     }
-    func getBrawlers() {
+    func getInformation() {
         status = .loading
-        
+        DispatchQueue.main.async {
+            Task {
+                guard let brawlersFromApi = try? await self.repository.getBrawlers() else {
+                    print("Unable to get information")
+                    return
+                }
+                self.brawlers = brawlersFromApi
+            }
+        }
         status = .loaded
     }
     

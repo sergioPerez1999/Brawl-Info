@@ -11,6 +11,7 @@ import Foundation
 struct Brawler: Decodable, Identifiable {
     let id: Int
     let name: String
+    let link: URL
     let imageUrl: URL
     let `class`: Clase
     let rarity: Rarity

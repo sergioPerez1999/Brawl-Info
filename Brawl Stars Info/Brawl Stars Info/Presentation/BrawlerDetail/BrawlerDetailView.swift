@@ -31,7 +31,7 @@ struct BrawlerDetailView: View {
                 }
                 VStack{
                     Text("Description")
-                        .font(.title3)
+                        .font(.title2)
                         .fontWeight(.bold)
                     Text(brawler.description)
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
@@ -63,6 +63,9 @@ struct BrawlerDetailView: View {
                         Text("Star Powers")
                             .font(.title3)
                             .fontWeight(.bold)
+                            .foregroundStyle(Color(red: 1, green: 0.7, blue: 0.2))
+                            
+                            
                     }
                     
                     ForEach(brawler.starPowers) { power in
@@ -89,6 +92,7 @@ struct BrawlerDetailView: View {
                         Text("Gadgets")
                             .font(.title3)
                             .fontWeight(.bold)
+                            .foregroundStyle(Color(red: 0, green: 0.7, blue: 0))
                     }
                     
                     ForEach(brawler.gadgets) { gadget in
@@ -101,6 +105,8 @@ struct BrawlerDetailView: View {
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
                             
                     }
+                    
+                    Link("For more information...", destination: brawler.link)
                 }
 
             }
@@ -115,6 +121,7 @@ struct BrawlerDetailView_Previews: PreviewProvider {
         BrawlerDetailView(brawler:
                 .init(id: 16000000,
                       name: "Shelly",
+                      link: URL(string: "https://brawlify.com/brawlers/detail/Shelly")!,
                       imageUrl: URL(string: "https://cdn-old.brawlify.com/brawler/Shelly.png")!,
                       class: .init(name: "Damage Dealer"),
                       rarity: .init(name: "Common", color: "#b9eaff"),

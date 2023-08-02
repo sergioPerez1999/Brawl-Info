@@ -11,7 +11,8 @@ import SwiftUI
 struct Brawl_Stars_InfoApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView().environmentObject(RootViewModel())
+            RootView()
+                .environmentObject(RootViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
         }
     }
 }
