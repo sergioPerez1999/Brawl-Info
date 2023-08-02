@@ -21,12 +21,15 @@ struct BrawlerCellView: View {
                 AsyncImage(url: brawler.imageUrl) { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 100, height: 20)
+                        .frame(width: 100, height: 100)
+                        
                 } placeholder: {
                     ProgressView()
                 }
                 
+                
                 VStack (alignment: .leading) {
+                    
                     Text(brawler.name)
                         .fontWeight(.bold)
                         .font(.system(size: 18))
@@ -35,15 +38,25 @@ struct BrawlerCellView: View {
                         .font(.system(size: 14))
                         .lineLimit(2)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
-                    Text("Class: \(brawler.class.name)")
-                        .font(.system(size: 14))
-                    HStack {
-                        Text("Rarity: ")
-                            .font(.system(size: 14))
-                        Text(brawler.rarity.name)
-                            .background(Color(hex: brawler.rarity.color))
-                            .font(.system(size: 14))
+                    
+                    HStack  {
+                        VStack (alignment: .leading){
+                            Text("Class: \(brawler.class.name)")
+                                .font(.system(size: 14))
+                            HStack {
+                                Text("Rarity: ")
+                                    .font(.system(size: 14))
+                                Text(brawler.rarity.name)
+                                    .font(.system(size: 14))
+                            }
                             
+                        }
+                        
+                        Image(brawler.rarity.name)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 40, height: 40)
+                            .clipShape(Circle())
                         
                     }
                     
@@ -52,6 +65,7 @@ struct BrawlerCellView: View {
 
             }
         }
+        
     }
 }
 

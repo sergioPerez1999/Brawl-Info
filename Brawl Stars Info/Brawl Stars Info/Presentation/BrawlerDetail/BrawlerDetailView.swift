@@ -11,7 +11,102 @@ struct BrawlerDetailView: View {
     let brawler: Brawler
     
     var body: some View {
-        Text(brawler.name)
+        
+        ScrollView {
+            VStack {
+                VStack (alignment: .center) {
+                    Text(brawler.name)
+                        .font(.largeTitle)
+                }
+                
+                VStack (alignment: .center){
+                    AsyncImage(url: brawler.imageUrl) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 350, height: 350)
+                            .clipShape(Circle())
+                    } placeholder: {
+                        ProgressView()
+                    }
+                }
+                VStack{
+                    Text("Description")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Text(brawler.description)
+                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
+                    HStack {
+                        Text("Class: ")
+                            .fontWeight(.bold)
+                        Text(brawler.class.name)
+                        Divider()
+                            .background(.black)
+                        Text("Rarity: ")
+                            .fontWeight(.bold)
+                        Image(brawler.rarity.name)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                    }
+                        
+                }
+                VStack {
+                    HStack {
+                        AsyncImage(url: brawler.starPowers[0].imageUrl) { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 30, height: 30)
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        Text("Star Powers")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                    
+                    ForEach(brawler.starPowers) { power in
+                        HStack (alignment: .top){
+                            Text("\(power.name): ")
+                                .fontWeight(.bold)
+                            
+                            Text("\(power.description)")
+                        }
+                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
+                            
+                    }
+                }
+                
+                VStack {
+                    HStack {
+                        AsyncImage(url: brawler.gadgets[0].imageUrl) { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 30, height: 30)
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        Text("Gadgets")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                    
+                    ForEach(brawler.gadgets) { gadget in
+                        HStack (alignment: .top){
+                            Text("\(gadget.name): ")
+                                .fontWeight(.bold)
+                            
+                            Text("\(gadget.description)")
+                        }
+                        .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
+                            
+                    }
+                }
+
+            }
+            
+        }
+        
     }
 }
 

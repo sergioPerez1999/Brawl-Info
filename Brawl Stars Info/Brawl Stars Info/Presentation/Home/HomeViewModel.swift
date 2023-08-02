@@ -25,8 +25,4 @@ final class HomeViewModel: ObservableObject {
         }
     }
     
-    func goToHome() {
-        InitView()
-    }
-    
 }

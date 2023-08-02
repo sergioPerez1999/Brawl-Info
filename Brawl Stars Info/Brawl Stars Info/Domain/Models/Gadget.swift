@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Gadget: Decodable {
+struct Gadget: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String

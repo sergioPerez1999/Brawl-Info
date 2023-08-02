@@ -29,6 +29,9 @@ struct HomeView: View {
                         }
                     }
                 }
+                .navigationTitle("Brawlers")
+                .navigationBarTitleDisplayMode(.inline)
+
             }
             
         }

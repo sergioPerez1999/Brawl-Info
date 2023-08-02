@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StarPower: Decodable {
+struct StarPower: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
