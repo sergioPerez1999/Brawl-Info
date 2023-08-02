@@ -48,6 +48,7 @@ struct BrawlerDetailView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 50, height: 50)
                             .clipShape(Circle())
+                            
                     }
                         
                 }
@@ -72,7 +73,7 @@ struct BrawlerDetailView: View {
                         HStack (alignment: .top){
                             Text("\(power.name): ")
                                 .fontWeight(.bold)
-                            
+                            Spacer()
                             Text("\(power.description)")
                         }
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
@@ -99,7 +100,7 @@ struct BrawlerDetailView: View {
                         HStack (alignment: .top){
                             Text("\(gadget.name): ")
                                 .fontWeight(.bold)
-                            
+                            Spacer()
                             Text("\(gadget.description)")
                         }
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))

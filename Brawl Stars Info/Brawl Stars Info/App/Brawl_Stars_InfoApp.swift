@@ -13,6 +13,7 @@ struct Brawl_Stars_InfoApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(RootViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
+                
         }
     }
 }

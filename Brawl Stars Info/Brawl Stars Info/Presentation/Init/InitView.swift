@@ -17,18 +17,28 @@ struct InitView: View {
                 .resizable()
                 .opacity(0.9)
                 .ignoresSafeArea()
-            VStack {
+            VStack (alignment: .center){
                 Text("Brawl Stars Info")
                     .font(.largeTitle)
-                    .foregroundStyle(.white)
                     .fontWeight(.bold)
+                    .foregroundStyle(.black)
                 
                 Button("Get Info") {
                     rootViewModel.getInformation()
                 }
+                .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundStyle(.black)
+                .background(.white)
+                .cornerRadius(20)
+                .shadow(radius: 25)
             }
+            .frame(width: 300, height: 200)
             .padding(20)
             .background(.red)
+            .cornerRadius(20)
+            
             
         }
     }

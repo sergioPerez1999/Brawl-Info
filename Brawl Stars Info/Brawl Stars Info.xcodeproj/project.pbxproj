@@ -19,15 +19,10 @@
 		EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */; };
 		EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */; };
 		EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */; };
-		EB4F79DF2A79733D00051AE5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */; };
 		EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */; };
 		EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC182A7A4A6700736203 /* TabBarView.swift */; };
-		EB68DC232A7A559600736203 /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC222A7A559600736203 /* GameList.swift */; };
-		EB68DC252A7A55AB00736203 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC242A7A55AB00736203 /* Game.swift */; };
-		EB68DC272A7A562200736203 /* GameModeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC262A7A562200736203 /* GameModeMap.swift */; };
-		EB68DC292A7A564C00736203 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC282A7A564C00736203 /* Mapa.swift */; };
-		EB68DC2B2A7A56B300736203 /* MapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC2A2A7A56B300736203 /* MapList.swift */; };
 		EB68DC3C2A7A70AA00736203 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3B2A7A70AA00736203 /* SettingsView.swift */; };
+		EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */; };
 		EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */; };
 		EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */; };
 		EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */; };
@@ -73,15 +68,10 @@
 		EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerCellView.swift; sourceTree = "<group>"; };
 		EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerDetailView.swift; sourceTree = "<group>"; };
 		EB68DC182A7A4A6700736203 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		EB68DC222A7A559600736203 /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
-		EB68DC242A7A55AB00736203 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		EB68DC262A7A562200736203 /* GameModeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeMap.swift; sourceTree = "<group>"; };
-		EB68DC282A7A564C00736203 /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
-		EB68DC2A2A7A56B300736203 /* MapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapList.swift; sourceTree = "<group>"; };
 		EB68DC3B2A7A70AA00736203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsEnum.swift; sourceTree = "<group>"; };
 		EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
 		EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
@@ -235,8 +225,6 @@
 		EB12AE262A79125C00C4CA53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB68DC162A7A443500736203 /* GamesModel */,
-				EB68DC152A7A442700736203 /* MapsModel */,
 				EB68DC142A7A441A00736203 /* BrawlerModel */,
 			);
 			path = Models;
@@ -247,7 +235,6 @@
 			children = (
 				EB4F79D72A796E1000051AE5 /* Cell */,
 				EB12AE322A7914E200C4CA53 /* HomeView.swift */,
-				EB4F79DE2A79733D00051AE5 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -272,6 +259,7 @@
 		EB4F79DA2A79718F00051AE5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EB68DC3D2A7A72AB00736203 /* Enums */,
 				EB4F79DB2A79719500051AE5 /* Extensions */,
 			);
 			path = Utils;
@@ -306,25 +294,6 @@
 			path = BrawlerModel;
 			sourceTree = "<group>";
 		};
-		EB68DC152A7A442700736203 /* MapsModel */ = {
-			isa = PBXGroup;
-			children = (
-				EB68DC262A7A562200736203 /* GameModeMap.swift */,
-				EB68DC282A7A564C00736203 /* Mapa.swift */,
-				EB68DC2A2A7A56B300736203 /* MapList.swift */,
-			);
-			path = MapsModel;
-			sourceTree = "<group>";
-		};
-		EB68DC162A7A443500736203 /* GamesModel */ = {
-			isa = PBXGroup;
-			children = (
-				EB68DC222A7A559600736203 /* GameList.swift */,
-				EB68DC242A7A55AB00736203 /* Game.swift */,
-			);
-			path = GamesModel;
-			sourceTree = "<group>";
-		};
 		EB68DC172A7A4A5500736203 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +308,14 @@
 				EB68DC3B2A7A70AA00736203 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		EB68DC3D2A7A72AB00736203 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		EB93A6FF2A7923ED00DDD74D /* Remote */ = {
@@ -498,8 +475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */,
-				EB68DC272A7A562200736203 /* GameModeMap.swift in Sources */,
-				EB4F79DF2A79733D00051AE5 /* HomeViewModel.swift in Sources */,
 				EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */,
 				EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */,
 				EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */,
@@ -508,17 +483,14 @@
 				EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */,
 				EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */,
 				EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */,
-				EB68DC232A7A559600736203 /* GameList.swift in Sources */,
 				EB93A7242A79385300DDD74D /* Gadget.swift in Sources */,
 				EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */,
-				EB68DC292A7A564C00736203 /* Mapa.swift in Sources */,
 				EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */,
-				EB68DC2B2A7A56B300736203 /* MapList.swift in Sources */,
-				EB68DC252A7A55AB00736203 /* Game.swift in Sources */,
 				EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */,
 				EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */,
 				EB68DC3C2A7A70AA00736203 /* SettingsView.swift in Sources */,
 				EB93A71B2A79359200DDD74D /* Clase.swift in Sources */,
+				EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */,
 				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
 				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
 				EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */,
