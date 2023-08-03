@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RepositoryProtocol {
-    func getBrawlers() async throws -> [Brawler]
+    func getInformation() async throws -> Information
 }

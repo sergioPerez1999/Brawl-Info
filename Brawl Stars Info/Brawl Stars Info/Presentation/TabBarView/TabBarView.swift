@@ -19,6 +19,17 @@ struct TabBarView: View {
                         Label("Brawlers", systemImage: "person.fill")
                         
                     }
+                
+                MapView()
+                    .tabItem {
+                        Label("Maps", systemImage: "map.fill")
+                        
+                    }
+                GameView()
+                    .tabItem {
+                        Label("Games", systemImage: "gamecontroller.fill")
+                    }
+                
                 SettingsView()
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
@@ -29,8 +40,3 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBarView()
-    }
-}

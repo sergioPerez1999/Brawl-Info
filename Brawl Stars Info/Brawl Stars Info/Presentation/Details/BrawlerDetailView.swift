@@ -17,6 +17,7 @@ struct BrawlerDetailView: View {
                 VStack (alignment: .center) {
                     Text(brawler.name)
                         .font(.largeTitle)
+                        .fontWeight(.bold)
                 }
                 
                 VStack (alignment: .center){

@@ -33,6 +33,19 @@
 		EB93A7202A79371000DDD74D /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A71F2A79371000DDD74D /* Rarity.swift */; };
 		EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7212A7937B700DDD74D /* StarPower.swift */; };
 		EB93A7242A79385300DDD74D /* Gadget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7232A79385300DDD74D /* Gadget.swift */; };
+		EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20552A7B8F3F00A4AF3C /* MapList.swift */; };
+		EBAA20582A7B8F5700A4AF3C /* GameModeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20572A7B8F5700A4AF3C /* GameModeMap.swift */; };
+		EBAA205A2A7B8FB400A4AF3C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20592A7B8FB400A4AF3C /* Map.swift */; };
+		EBAA205D2A7B9E3200A4AF3C /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA205C2A7B9E3200A4AF3C /* Information.swift */; };
+		EBAA20612A7BA3ED00A4AF3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20602A7BA3ED00A4AF3C /* MapView.swift */; };
+		EBAA20642A7BA42B00A4AF3C /* MapCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20632A7BA42B00A4AF3C /* MapCellView.swift */; };
+		EBAA20672A7BB01F00A4AF3C /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20662A7BB01F00A4AF3C /* MapDetailView.swift */; };
+		EBAA206B2A7BBBE900A4AF3C /* GameCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA206A2A7BBBE900A4AF3C /* GameCellView.swift */; };
+		EBAA206D2A7BBBF400A4AF3C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA206C2A7BBBF400A4AF3C /* GameView.swift */; };
+		EBAA20702A7BBCA400A4AF3C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA206F2A7BBCA400A4AF3C /* Game.swift */; };
+		EBAA20722A7BBCF600A4AF3C /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20712A7BBCF600A4AF3C /* GameList.swift */; };
+		EBAA20742A7BC24000A4AF3C /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20732A7BC24000A4AF3C /* GameDetailView.swift */; };
+		EBAA20762A7BC51B00A4AF3C /* SortOptionsEnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +95,19 @@
 		EB93A71F2A79371000DDD74D /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 		EB93A7212A7937B700DDD74D /* StarPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPower.swift; sourceTree = "<group>"; };
 		EB93A7232A79385300DDD74D /* Gadget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gadget.swift; sourceTree = "<group>"; };
+		EBAA20552A7B8F3F00A4AF3C /* MapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapList.swift; sourceTree = "<group>"; };
+		EBAA20572A7B8F5700A4AF3C /* GameModeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeMap.swift; sourceTree = "<group>"; };
+		EBAA20592A7B8FB400A4AF3C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		EBAA205C2A7B9E3200A4AF3C /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		EBAA20602A7BA3ED00A4AF3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EBAA20632A7BA42B00A4AF3C /* MapCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCellView.swift; sourceTree = "<group>"; };
+		EBAA20662A7BB01F00A4AF3C /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
+		EBAA206A2A7BBBE900A4AF3C /* GameCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellView.swift; sourceTree = "<group>"; };
+		EBAA206C2A7BBBF400A4AF3C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EBAA206F2A7BBCA400A4AF3C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EBAA20712A7BBCF600A4AF3C /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		EBAA20732A7BC24000A4AF3C /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsEnumMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +194,11 @@
 		EB12AE1E2A7911BD00C4CA53 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EBAA20682A7BBBCA00A4AF3C /* Game */,
+				EBAA205E2A7BA3D700A4AF3C /* Map */,
 				EB68DC3A2A7A709B00736203 /* Settings */,
 				EB68DC172A7A4A5500736203 /* TabBarView */,
-				EB4F79E02A7976F200051AE5 /* BrawlerDetail */,
+				EB4F79E02A7976F200051AE5 /* Details */,
 				EB12AE342A791A4700C4CA53 /* Root */,
 				EB12AE312A7914D300C4CA53 /* Home */,
 				EB12AE212A79120B00C4CA53 /* Init */,
@@ -225,6 +253,9 @@
 		EB12AE262A79125C00C4CA53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBAA206E2A7BBC0B00A4AF3C /* GamesModel */,
+				EBAA205B2A7B9E2100A4AF3C /* Information */,
+				EBAA20542A7B8F2B00A4AF3C /* MapsModel */,
 				EB68DC142A7A441A00736203 /* BrawlerModel */,
 			);
 			path = Models;
@@ -273,12 +304,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		EB4F79E02A7976F200051AE5 /* BrawlerDetail */ = {
+		EB4F79E02A7976F200051AE5 /* Details */ = {
 			isa = PBXGroup;
 			children = (
 				EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */,
+				EBAA20662A7BB01F00A4AF3C /* MapDetailView.swift */,
+				EBAA20732A7BC24000A4AF3C /* GameDetailView.swift */,
 			);
-			path = BrawlerDetail;
+			path = Details;
 			sourceTree = "<group>";
 		};
 		EB68DC142A7A441A00736203 /* BrawlerModel */ = {
@@ -314,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */,
+				EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -342,6 +376,67 @@
 				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		EBAA20542A7B8F2B00A4AF3C /* MapsModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA20552A7B8F3F00A4AF3C /* MapList.swift */,
+				EBAA20572A7B8F5700A4AF3C /* GameModeMap.swift */,
+				EBAA20592A7B8FB400A4AF3C /* Map.swift */,
+			);
+			path = MapsModel;
+			sourceTree = "<group>";
+		};
+		EBAA205B2A7B9E2100A4AF3C /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA205C2A7B9E3200A4AF3C /* Information.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		EBAA205E2A7BA3D700A4AF3C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA20622A7BA3F300A4AF3C /* Cell */,
+				EBAA20602A7BA3ED00A4AF3C /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		EBAA20622A7BA3F300A4AF3C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA20632A7BA42B00A4AF3C /* MapCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBAA20682A7BBBCA00A4AF3C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA20692A7BBBDD00A4AF3C /* Cell */,
+				EBAA206C2A7BBBF400A4AF3C /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EBAA20692A7BBBDD00A4AF3C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA206A2A7BBBE900A4AF3C /* GameCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBAA206E2A7BBC0B00A4AF3C /* GamesModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA206F2A7BBCA400A4AF3C /* Game.swift */,
+				EBAA20712A7BBCF600A4AF3C /* GameList.swift */,
+			);
+			path = GamesModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,23 +573,36 @@
 				EB93A7042A79243100DDD74D /* RemoteDataSourceImpl.swift in Sources */,
 				EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */,
 				EB93A7222A7937B700DDD74D /* StarPower.swift in Sources */,
+				EBAA206D2A7BBBF400A4AF3C /* GameView.swift in Sources */,
 				EB93A71D2A79364700DDD74D /* BrawlerList.swift in Sources */,
 				EB93A7192A7933DE00DDD74D /* Brawler.swift in Sources */,
+				EBAA20582A7B8F5700A4AF3C /* GameModeMap.swift in Sources */,
 				EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */,
+				EBAA20742A7BC24000A4AF3C /* GameDetailView.swift in Sources */,
 				EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */,
 				EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */,
+				EBAA205A2A7B8FB400A4AF3C /* Map.swift in Sources */,
+				EBAA20642A7BA42B00A4AF3C /* MapCellView.swift in Sources */,
 				EB93A7242A79385300DDD74D /* Gadget.swift in Sources */,
 				EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */,
+				EBAA205D2A7B9E3200A4AF3C /* Information.swift in Sources */,
 				EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */,
 				EB93A7072A79269F00DDD74D /* RepositoryImpl.swift in Sources */,
 				EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */,
+				EBAA20612A7BA3ED00A4AF3C /* MapView.swift in Sources */,
 				EB68DC3C2A7A70AA00736203 /* SettingsView.swift in Sources */,
+				EBAA206B2A7BBBE900A4AF3C /* GameCellView.swift in Sources */,
+				EBAA20702A7BBCA400A4AF3C /* Game.swift in Sources */,
 				EB93A71B2A79359200DDD74D /* Clase.swift in Sources */,
 				EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */,
 				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
+				EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */,
 				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
 				EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */,
+				EBAA20672A7BB01F00A4AF3C /* MapDetailView.swift in Sources */,
 				EB93A7202A79371000DDD74D /* Rarity.swift in Sources */,
+				EBAA20762A7BC51B00A4AF3C /* SortOptionsEnumMap.swift in Sources */,
+				EBAA20722A7BBCF600A4AF3C /* GameList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

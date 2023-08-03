@@ -1,15 +1,16 @@
 //
-//  HomeView.swift
+//  MapView.swift
 //  Brawl Stars Info
 //
-//  Created by Pérez Cubedo Sergio on 1/8/23.
+//  Created by Pérez Cubedo Sergio on 3/8/23.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct MapView: View {
+    
     @EnvironmentObject var rootViewModel: RootViewModel
-
+    
     var body: some View {
         VStack {
             
@@ -23,10 +24,9 @@ struct HomeView: View {
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
-                            Picker("Sort By", selection: $rootViewModel.sortOption) {
-                                Text("Name").tag(SortOptionsEnum.name)
-                                Text("Rarity").tag(SortOptionsEnum.rarity)
-                                Text("Class").tag(SortOptionsEnum.`class`)
+                            Picker("Sort By", selection: $rootViewModel.sortOptionMap) {
+                                Text("Name").tag(SortOptionsEnumMap.name)
+                                Text("Game").tag(SortOptionsEnumMap.game)
                             }
                             .pickerStyle(SegmentedPickerStyle())
                             .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
@@ -35,11 +35,12 @@ struct HomeView: View {
                         .overlay(RoundedRectangle(cornerRadius: 15)
                                                     .stroke(style: StrokeStyle(lineWidth: 2, dash: [15.0])))
                         .padding()
-                        ForEach(rootViewModel.searchedBrawlers) { brawler in
+                        
+                        ForEach(rootViewModel.searchedMaps) { map in
                             NavigationLink {
-                                BrawlerDetailView(brawler: brawler)
+                                MapDetailView(map: map)
                             } label: {
-                                BrawlerCellView(brawler: brawler)
+                                MapCellView(map: map)
                             }
                             
                         }
@@ -48,7 +49,7 @@ struct HomeView: View {
                     }
                     
                     .scrollContentBackground(.hidden)
-                    .navigationTitle("Brawlers")
+                    .navigationTitle("Maps")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         Button("Exit") {
@@ -59,10 +60,12 @@ struct HomeView: View {
                 
                 
             }
-            .searchable(text: $rootViewModel.searchText)
+            .searchable(text: $rootViewModel.searchTextMap)
             
             
             
         }
     }
 }
+
+
