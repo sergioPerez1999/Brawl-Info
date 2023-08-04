@@ -8,6 +8,6 @@
 import Foundation
 
 
-struct MapList: Decodable {
+struct MapList: Codable {
     let list: [Map]
 }

@@ -22,7 +22,7 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Salir") {
+                Button("Exit") {
                     rootViewModel.goToHome()
                 }
             }

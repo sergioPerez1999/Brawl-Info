@@ -8,6 +8,6 @@
 import Foundation
 
 
-struct Clase: Decodable {
+struct Clase: Codable {
     let name: String
 }

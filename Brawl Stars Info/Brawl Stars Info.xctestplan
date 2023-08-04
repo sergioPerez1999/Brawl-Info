@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "3215D853-9058-4BA2-9E18-10126A48BF73",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Brawl Stars Info.xcodeproj",
+      "identifier" : "EB12ADF02A79118B00C4CA53",
+      "name" : "Brawl Stars Info"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Brawl Stars Info.xcodeproj",
+        "identifier" : "EB12AE002A79118C00C4CA53",
+        "name" : "Brawl Stars InfoTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Brawl Stars Info.xcodeproj",
+        "identifier" : "EB12AE0A2A79118C00C4CA53",
+        "name" : "Brawl Stars InfoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -78,7 +78,6 @@ final class RootViewModel: ObservableObject {
                 self.brawlers = informationFromApi.brawlers
                 self.maps = informationFromApi.maps
                 self.games = informationFromApi.games
-                print(informationFromApi.games)
                 self.status = .loaded
             }
         }

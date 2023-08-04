@@ -32,7 +32,7 @@ struct GameDetailView: View {
                     AsyncImage(url: game.imageUrl) { image in
                         image.resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 320, height: 320)
+                            .frame(width: 320, height: 400)
                     } placeholder: {
                         ProgressView()
                     }

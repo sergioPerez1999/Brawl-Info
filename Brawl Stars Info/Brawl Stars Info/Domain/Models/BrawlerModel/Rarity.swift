@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Rarity: Decodable {
+struct Rarity: Codable {
     let name: String
     let color: String
 }

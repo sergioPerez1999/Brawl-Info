@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct BrawlerList: Decodable {
+struct BrawlerList: Codable {
     let list: [Brawler]
 }

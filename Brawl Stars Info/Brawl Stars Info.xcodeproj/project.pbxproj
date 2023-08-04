@@ -10,13 +10,14 @@
 		EB12ADF52A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12ADF42A79118B00C4CA53 /* Brawl_Stars_InfoApp.swift */; };
 		EB12ADF92A79118C00C4CA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB12ADF82A79118C00C4CA53 /* Assets.xcassets */; };
 		EB12ADFC2A79118C00C4CA53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB12ADFB2A79118C00C4CA53 /* Preview Assets.xcassets */; };
-		EB12AE062A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */; };
 		EB12AE102A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE0F2A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift */; };
 		EB12AE122A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE112A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift */; };
 		EB12AE232A79121A00C4CA53 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE222A79121A00C4CA53 /* InitView.swift */; };
 		EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE322A7914E200C4CA53 /* HomeView.swift */; };
 		EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE352A791A5500C4CA53 /* RootView.swift */; };
 		EB12AE392A791A6B00C4CA53 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */; };
+		EB34977C2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB34977B2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift */; };
+		EB34977E2A7C10120047ABA6 /* NetworkFetchingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB34977D2A7C10120047ABA6 /* NetworkFetchingMock.swift */; };
 		EB4F79D92A796E1F00051AE5 /* BrawlerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */; };
 		EB4F79DD2A7971A300051AE5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */; };
 		EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */; };
@@ -46,6 +47,13 @@
 		EBAA20722A7BBCF600A4AF3C /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20712A7BBCF600A4AF3C /* GameList.swift */; };
 		EBAA20742A7BC24000A4AF3C /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20732A7BC24000A4AF3C /* GameDetailView.swift */; };
 		EBAA20762A7BC51B00A4AF3C /* SortOptionsEnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */; };
+		EBAA207B2A7BC88100A4AF3C /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA207A2A7BC88100A4AF3C /* URLProtocolMock.swift */; };
+		EBAA207D2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA207C2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift */; };
+		EBAAADC22A7CDD7B006FF9F0 /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAADC12A7CDD7B006FF9F0 /* MockRemoteDataSource.swift */; };
+		EBAAADC42A7CDEB5006FF9F0 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAADC32A7CDEB5006FF9F0 /* RepositoryTest.swift */; };
+		EBAAADC72A7CE6B3006FF9F0 /* RootViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */; };
+		EBAAADC92A7CE6FD006FF9F0 /* RepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAADC82A7CE6FD006FF9F0 /* RepositoryMock.swift */; };
+		EBAAADCB2A7CEA34006FF9F0 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAADCA2A7CEA34006FF9F0 /* URLSessionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +79,6 @@
 		EB12ADF82A79118C00C4CA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB12ADFB2A79118C00C4CA53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB12AE012A79118C00C4CA53 /* Brawl Stars InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brawl Stars InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoTests.swift; sourceTree = "<group>"; };
 		EB12AE0B2A79118C00C4CA53 /* Brawl Stars InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brawl Stars InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB12AE0F2A79118C00C4CA53 /* Brawl_Stars_InfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoUITests.swift; sourceTree = "<group>"; };
 		EB12AE112A79118C00C4CA53 /* Brawl_Stars_InfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brawl_Stars_InfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -79,6 +86,8 @@
 		EB12AE322A7914E200C4CA53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB12AE352A791A5500C4CA53 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EB12AE382A791A6B00C4CA53 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		EB34977B2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingProtocol.swift; sourceTree = "<group>"; };
+		EB34977D2A7C10120047ABA6 /* NetworkFetchingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingMock.swift; sourceTree = "<group>"; };
 		EB4F79D82A796E1F00051AE5 /* BrawlerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerCellView.swift; sourceTree = "<group>"; };
 		EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		EB4F79E12A79770400051AE5 /* BrawlerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerDetailView.swift; sourceTree = "<group>"; };
@@ -108,6 +117,14 @@
 		EBAA20712A7BBCF600A4AF3C /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
 		EBAA20732A7BC24000A4AF3C /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsEnumMap.swift; sourceTree = "<group>"; };
+		EBAA207A2A7BC88100A4AF3C /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		EBAA207C2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		EBAAADC12A7CDD7B006FF9F0 /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
+		EBAAADC32A7CDEB5006FF9F0 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		EBAAADC52A7CE346006FF9F0 /* Brawl Stars Info.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Brawl Stars Info.xctestplan"; sourceTree = "<group>"; };
+		EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTest.swift; sourceTree = "<group>"; };
+		EBAAADC82A7CE6FD006FF9F0 /* RepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMock.swift; sourceTree = "<group>"; };
+		EBAAADCA2A7CEA34006FF9F0 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +155,7 @@
 		EB12ADE82A79118B00C4CA53 = {
 			isa = PBXGroup;
 			children = (
+				EBAAADC52A7CE346006FF9F0 /* Brawl Stars Info.xctestplan */,
 				EB12ADF32A79118B00C4CA53 /* Brawl Stars Info */,
 				EB12AE042A79118C00C4CA53 /* Brawl Stars InfoTests */,
 				EB12AE0E2A79118C00C4CA53 /* Brawl Stars InfoUITests */,
@@ -177,7 +195,8 @@
 		EB12AE042A79118C00C4CA53 /* Brawl Stars InfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB12AE052A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift */,
+				EBAA20782A7BC86800A4AF3C /* TestUtils */,
+				EBAA20772A7BC85900A4AF3C /* Suts */,
 			);
 			path = "Brawl Stars InfoTests";
 			sourceTree = "<group>";
@@ -279,6 +298,14 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		EB34977A2A7C0FDF0047ABA6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB34977B2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EB4F79D72A796E1000051AE5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4F79DC2A7971A300051AE5 /* ColorExtension.swift */,
+				EBAAADCA2A7CEA34006FF9F0 /* URLSessionExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -372,6 +400,7 @@
 		EB93A7052A79269000DDD74D /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				EB34977A2A7C0FDF0047ABA6 /* Protocols */,
 				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
 				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
 			);
@@ -437,6 +466,35 @@
 				EBAA20712A7BBCF600A4AF3C /* GameList.swift */,
 			);
 			path = GamesModel;
+			sourceTree = "<group>";
+		};
+		EBAA20772A7BC85900A4AF3C /* Suts */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA207C2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift */,
+				EBAAADC32A7CDEB5006FF9F0 /* RepositoryTest.swift */,
+				EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */,
+			);
+			path = Suts;
+			sourceTree = "<group>";
+		};
+		EBAA20782A7BC86800A4AF3C /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA20792A7BC86F00A4AF3C /* Mocks */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		EBAA20792A7BC86F00A4AF3C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA207A2A7BC88100A4AF3C /* URLProtocolMock.swift */,
+				EB34977D2A7C10120047ABA6 /* NetworkFetchingMock.swift */,
+				EBAAADC12A7CDD7B006FF9F0 /* MockRemoteDataSource.swift */,
+				EBAAADC82A7CE6FD006FF9F0 /* RepositoryMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,10 +654,12 @@
 				EB93A71B2A79359200DDD74D /* Clase.swift in Sources */,
 				EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */,
 				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
+				EB34977C2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift in Sources */,
 				EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */,
 				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
 				EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */,
 				EBAA20672A7BB01F00A4AF3C /* MapDetailView.swift in Sources */,
+				EBAAADCB2A7CEA34006FF9F0 /* URLSessionExtension.swift in Sources */,
 				EB93A7202A79371000DDD74D /* Rarity.swift in Sources */,
 				EBAA20762A7BC51B00A4AF3C /* SortOptionsEnumMap.swift in Sources */,
 				EBAA20722A7BBCF600A4AF3C /* GameList.swift in Sources */,
@@ -610,7 +670,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB12AE062A79118C00C4CA53 /* Brawl_Stars_InfoTests.swift in Sources */,
+				EB34977E2A7C10120047ABA6 /* NetworkFetchingMock.swift in Sources */,
+				EBAAADC92A7CE6FD006FF9F0 /* RepositoryMock.swift in Sources */,
+				EBAAADC22A7CDD7B006FF9F0 /* MockRemoteDataSource.swift in Sources */,
+				EBAA207D2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift in Sources */,
+				EBAAADC72A7CE6B3006FF9F0 /* RootViewModelTest.swift in Sources */,
+				EBAA207B2A7BC88100A4AF3C /* URLProtocolMock.swift in Sources */,
+				EBAAADC42A7CDEB5006FF9F0 /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

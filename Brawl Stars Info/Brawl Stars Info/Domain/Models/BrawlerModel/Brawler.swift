@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Brawler: Decodable, Identifiable {
+struct Brawler: Codable, Identifiable {
     let id: Int
     let name: String
     let link: URL

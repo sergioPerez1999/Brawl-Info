@@ -8,6 +8,6 @@
 import Foundation
 
 
-struct GameList: Decodable {
+struct GameList: Codable {
     let list: [Game]
 }
