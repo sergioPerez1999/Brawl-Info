@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-enum Status {
-    case primary, loading, loaded, error(error: String)
+enum Status: Equatable {
+    case primary, loaded, error(error: String)
 }
 
 final class RootViewModel: ObservableObject {

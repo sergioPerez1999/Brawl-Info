@@ -36,85 +36,36 @@ struct BattleView: View {
 
                                     
                                 }
+                                .tag(map.id)
+                            }
+                        }
+    
+                        .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
+                        .pickerStyle(NavigationLinkPickerStyle())
+                        
+                        Picker("Brawler", selection: $battleViewModel.brawlerSelected) {
+                            ForEach(battleViewModel.brawlers) { brawler in
+                                HStack {
+                                    Text(brawler.name)
+                                    AsyncImage(url: brawler.imageUrl) { image in
+                                        image.resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 35, height: 35, alignment: .center)
+                                            .clipShape(Circle())
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
+                                    .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 10))
+
+                                    
+                                }
+                                .tag(brawler.id)
                             }
                         }
                         .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
                         .pickerStyle(NavigationLinkPickerStyle())
-                        
-                        VStack (alignment: .center, spacing: 25) {
-                            Text("Team 1")
-                            HStack (spacing: 25) {
-                                VStack {
-                                    Text("Brawler 1")
-                                    Picker("Team 1", selection: $battleViewModel.brawler_1_1) {
-                                        ForEach(battleViewModel.brawlers) { brawler in
-                                                Text(brawler.name)
-                                        }
-                                    }
-                                    .labelsHidden()
-                                }
-                                VStack {
-                                    Text("Brawler 2")
-                                    Picker("Team 1", selection: $battleViewModel.brawler_1_2) {
-                                        ForEach(battleViewModel.brawlers) { brawler in
-                                                Text(brawler.name)
-                                        }
-                                    }
-                                    .labelsHidden()
-                                }
-                                if isShown {
-                                    VStack {
-                                        Text("Brawler 3")
-                                        Picker("Team 1", selection: $battleViewModel.brawler_1_3) {
-                                            ForEach(battleViewModel.brawlers) { brawler in
-                                                    Text(brawler.name)
-                                            }
-                                        }
-                                        .labelsHidden()
-                                        
-                                    }
-                                }
-                                
-                                
-                            }
-                        }
-                        
-                        VStack (alignment: .center, spacing: 25) {
-                            Text("Team 2")
-                            HStack (spacing: 25) {
-                                VStack {
-                                    Text("Brawler 1")
-                                    Picker("Team 1", selection: $battleViewModel.brawler_2_1) {
-                                        ForEach(battleViewModel.brawlers) { brawler in
-                                                Text(brawler.name)
-                                        }
-                                    }
-                                    .labelsHidden()
-                                }
-                                VStack {
-                                    Text("Brawler 2")
-                                    Picker("Team 1", selection: $battleViewModel.brawler_2_2) {
-                                        ForEach(battleViewModel.brawlers) { brawler in
-                                                Text(brawler.name)
-                                        }
-                                    }
-                                    .labelsHidden()
-                                }
-                                if isShown {
-                                    VStack {
-                                        Text("Brawler 3")
-                                        Picker("Team 1", selection: $battleViewModel.brawler_2_3) {
-                                            ForEach(battleViewModel.brawlers) { brawler in
-                                                    Text(brawler.name)
-                                            }
-                                        }
-                                        .labelsHidden()
-                                        
-                                    }
-                                }
-                                
-                                
-                            }
+                        Button("Start Fight") {
+                            battleViewModel.startBattle()
                         }
                         
                     } header: {
@@ -124,10 +75,12 @@ struct BattleView: View {
                 }
                 .navigationTitle("Battle")
                 .navigationBarTitleDisplayMode(.inline)
+                .alert(isPresented: $battleViewModel.isAlertPresented) {
+                    Alert(title: Text("Battle results"), message: Text(battleViewModel.alertMessage), dismissButton: .default(Text("Close")))
+                        }
+
                 
-                Button("Start Fight") {
-                    print("Fight Started...")
-                }
+                
             }
             
         }

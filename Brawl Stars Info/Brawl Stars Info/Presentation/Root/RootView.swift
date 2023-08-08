@@ -17,10 +17,6 @@ struct RootView: View {
             InitView()
                 .preferredColorScheme(isDarkMode ? .dark : .light)
         
-        case .loading:
-            ProgressView()
-                .preferredColorScheme(isDarkMode ? .dark : .light)
-        
         case .error(error: let errorString):
             Text("Error \(errorString)")
             

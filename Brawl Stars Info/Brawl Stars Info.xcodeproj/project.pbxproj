@@ -25,6 +25,7 @@
 		EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC182A7A4A6700736203 /* TabBarView.swift */; };
 		EB68DC3C2A7A70AA00736203 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3B2A7A70AA00736203 /* SettingsView.swift */; };
 		EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */; };
+		EB8C860C2A8256F1001B7D7F /* GameModeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */; };
 		EB92E2862A8239C600AD482D /* MapViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92E2852A8239C600AD482D /* MapViewModelTest.swift */; };
 		EB92E2882A8247A200AD482D /* GameViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92E2872A8247A200AD482D /* GameViewModelTest.swift */; };
 		EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */; };
@@ -104,6 +105,7 @@
 		EB68DC182A7A4A6700736203 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		EB68DC3B2A7A70AA00736203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsEnum.swift; sourceTree = "<group>"; };
+		EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeEnum.swift; sourceTree = "<group>"; };
 		EB92E2852A8239C600AD482D /* MapViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTest.swift; sourceTree = "<group>"; };
 		EB92E2872A8247A200AD482D /* GameViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTest.swift; sourceTree = "<group>"; };
 		EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
@@ -397,8 +399,36 @@
 				EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */,
 				EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */,
 				EBC013C12A80FC7800F3CC89 /* NumberPlayersEnum.swift */,
+				EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		EB8C860D2A826559001B7D7F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EB8C860E2A826566001B7D7F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA207C2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift */,
+				EBAAADC32A7CDEB5006FF9F0 /* RepositoryTest.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EB8C860F2A82656B001B7D7F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EB92E2872A8247A200AD482D /* GameViewModelTest.swift */,
+				EB92E2852A8239C600AD482D /* MapViewModelTest.swift */,
+				EB2B58DC2A82256200AE2662 /* HomeViewModelTest.swift */,
+				EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		EB93A6FF2A7923ED00DDD74D /* Remote */ = {
@@ -503,12 +533,9 @@
 		EBAA20772A7BC85900A4AF3C /* Suts */ = {
 			isa = PBXGroup;
 			children = (
-				EBAA207C2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift */,
-				EBAAADC32A7CDEB5006FF9F0 /* RepositoryTest.swift */,
-				EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */,
-				EB2B58DC2A82256200AE2662 /* HomeViewModelTest.swift */,
-				EB92E2852A8239C600AD482D /* MapViewModelTest.swift */,
-				EB92E2872A8247A200AD482D /* GameViewModelTest.swift */,
+				EB8C860F2A82656B001B7D7F /* Presentation */,
+				EB8C860E2A826566001B7D7F /* Data */,
+				EB8C860D2A826559001B7D7F /* Domain */,
 			);
 			path = Suts;
 			sourceTree = "<group>";
@@ -697,6 +724,7 @@
 				EB34977C2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift in Sources */,
 				EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */,
 				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
+				EB8C860C2A8256F1001B7D7F /* GameModeEnum.swift in Sources */,
 				EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */,
 				EBAA20672A7BB01F00A4AF3C /* MapDetailView.swift in Sources */,
 				EBAAADCB2A7CEA34006FF9F0 /* URLSessionExtension.swift in Sources */,

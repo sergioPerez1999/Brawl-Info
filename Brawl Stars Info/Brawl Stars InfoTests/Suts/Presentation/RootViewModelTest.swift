@@ -15,7 +15,6 @@ final class RootViewModelTest: XCTestCase {
     
     override func setUpWithError() throws {
         try super.setUpWithError()
-        let mockRepository = RepositoryMock()
         sut = RootViewModel()
     }
 
@@ -24,8 +23,9 @@ final class RootViewModelTest: XCTestCase {
         try super.tearDownWithError()
     }
 
-//    func testRootViewModel_whenGetInformation_expectInformationNotNull() throws {
-//        sut?.getInformation()
-//    }
+    func testRootViewModel_whenGoHome_expectLoaded() throws {
+        sut?.goToHome()
+        XCTAssertEqual(sut?.status, .primary)
+    }
 
 }
