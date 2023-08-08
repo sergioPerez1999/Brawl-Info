@@ -11,5 +11,4 @@ import Foundation
 struct Information: Decodable {
     let brawlers: [Brawler]
     let maps: [Map]
-    let games: [Game]
 }

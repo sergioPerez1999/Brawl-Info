@@ -26,6 +26,8 @@
 		EB68DC3C2A7A70AA00736203 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3B2A7A70AA00736203 /* SettingsView.swift */; };
 		EB68DC3F2A7A72BE00736203 /* SortOptionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */; };
 		EB8C860C2A8256F1001B7D7F /* GameModeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */; };
+		EB8C86112A826651001B7D7F /* ColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8C86102A826651001B7D7F /* ColorExtensionTest.swift */; };
+		EB8C86132A8266EF001B7D7F /* BattleViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8C86122A8266EF001B7D7F /* BattleViewModelTest.swift */; };
 		EB92E2862A8239C600AD482D /* MapViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92E2852A8239C600AD482D /* MapViewModelTest.swift */; };
 		EB92E2882A8247A200AD482D /* GameViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92E2872A8247A200AD482D /* GameViewModelTest.swift */; };
 		EB93A7022A79242200DDD74D /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */; };
@@ -106,6 +108,8 @@
 		EB68DC3B2A7A70AA00736203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EB68DC3E2A7A72BE00736203 /* SortOptionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsEnum.swift; sourceTree = "<group>"; };
 		EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeEnum.swift; sourceTree = "<group>"; };
+		EB8C86102A826651001B7D7F /* ColorExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensionTest.swift; sourceTree = "<group>"; };
+		EB8C86122A8266EF001B7D7F /* BattleViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModelTest.swift; sourceTree = "<group>"; };
 		EB92E2852A8239C600AD482D /* MapViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTest.swift; sourceTree = "<group>"; };
 		EB92E2872A8247A200AD482D /* GameViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTest.swift; sourceTree = "<group>"; };
 		EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
@@ -407,6 +411,7 @@
 		EB8C860D2A826559001B7D7F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EB8C86102A826651001B7D7F /* ColorExtensionTest.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				EB92E2852A8239C600AD482D /* MapViewModelTest.swift */,
 				EB2B58DC2A82256200AE2662 /* HomeViewModelTest.swift */,
 				EBAAADC62A7CE6B3006FF9F0 /* RootViewModelTest.swift */,
+				EB8C86122A8266EF001B7D7F /* BattleViewModelTest.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -739,9 +745,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8C86132A8266EF001B7D7F /* BattleViewModelTest.swift in Sources */,
 				EB34977E2A7C10120047ABA6 /* NetworkFetchingMock.swift in Sources */,
 				EB92E2862A8239C600AD482D /* MapViewModelTest.swift in Sources */,
 				EB92E2882A8247A200AD482D /* GameViewModelTest.swift in Sources */,
+				EB8C86112A826651001B7D7F /* ColorExtensionTest.swift in Sources */,
 				EBAAADC92A7CE6FD006FF9F0 /* RepositoryMock.swift in Sources */,
 				EBAAADC22A7CDD7B006FF9F0 /* MockRemoteDataSource.swift in Sources */,
 				EBAA207D2A7BC93A00A4AF3C /* RemoteDataSourceTests.swift in Sources */,

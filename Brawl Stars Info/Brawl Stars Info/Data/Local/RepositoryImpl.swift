@@ -21,8 +21,7 @@ final class RepositoryImpl: RepositoryProtocol {
     func getInformation() async throws -> Information {
         let brawlers = try await remoteDataSource.getBrawlers().list
         let maps = try await remoteDataSource.getMaps().list
-        let games = try await remoteDataSource.getGames().list
-        let information = Information(brawlers: brawlers, maps: maps, games: games)
+        let information = Information(brawlers: brawlers, maps: maps)
         
         return information
     }

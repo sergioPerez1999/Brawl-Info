@@ -44,7 +44,7 @@ final class BattleViewModel: ObservableObject {
         getInformation()
     }
     
-    func getInformation() {
+    func getInformation(completion: @escaping () -> () = {}) {
         DispatchQueue.main.async {
             Task {
                 guard let informationFromApi = try? await self.repository.getInformation() else {
@@ -55,6 +55,7 @@ final class BattleViewModel: ObservableObject {
                 self.maps = informationFromApi.maps
                 self.brawlerSelected = self.brawlers[0].id
                 self.mapSelected = self.maps[0].id
+                completion()
                 
             }
         }
@@ -66,7 +67,7 @@ final class BattleViewModel: ObservableObject {
         
         switch numberEnum {
         case .fivePlayers:
-            let number = Int.random(in: 1...10)
+            let number = Int.random(in: 1...2)
             switch number {
             case 1:
                 alertMessage = "Your team formed by \(brawler.name), \(brawlers.randomElement()?.name ?? brawler.name), \(brawlers.randomElement()?.name ?? brawler.name), \(brawlers.randomElement()?.name ?? brawler.name), \(brawlers.randomElement()?.name ?? brawler.name) have won playing vs \(brawlers.randomElement()?.name ?? brawler.name) in \(map.name) playing \(map.gameMode.name).\nCongratulations 🎊!"

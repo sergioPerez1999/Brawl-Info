@@ -29,9 +29,7 @@ final class RepositoryMock: RepositoryProtocol {
                                 ])]
         let maps = [Map(id: 15000511, name: "Devolution", link: URL(string: "https://brawlify.com/maps/detail/Devolution")!, imageUrl: URL(string: "https://cdn-old.brawlify.com/map/15000511.png")!, gameMode: .init(id: nil, name: "Bot Drop", imageUrl: URL(string: "https://cdn-old.brawlify.com/gamemode/Bot-Drop.png")!))]
         
-        let games = [Game(id: nil, name: "Bot Drop", color: "#ff4343", title: "3 vs 3", description: "Defend against the robot invasion. Destroy robots and collect bolts. First team to collect <MAX_SCORE> bolts wins the match!", link: URL(string: "https://brawlify.com/gamemodes/detail/Bot-Drop")!, imageUrl: URL(string: "https://cdn-old.brawlify.com/gamemode/Bot-Drop.png")!)]
-        
-        let information = Information(brawlers: brawlers, maps: maps, games: games)
+        let information = Information(brawlers: brawlers, maps: maps)
         
         return information
     }

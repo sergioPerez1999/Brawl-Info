@@ -29,7 +29,6 @@ var sut: RepositoryProtocol?
         XCTAssertNotNil(information)
         XCTAssertNotNil(information?.brawlers)
         XCTAssertNotNil(information?.maps)
-        XCTAssertNotNil(information?.games)
         
     }
     
