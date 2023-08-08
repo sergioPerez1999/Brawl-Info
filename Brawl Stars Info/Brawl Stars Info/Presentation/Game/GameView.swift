@@ -10,7 +10,7 @@ import SwiftUI
 struct GameView: View {
     
     @EnvironmentObject var rootViewModel: RootViewModel
-    
+    @ObservedObject var gameViewModel: GameViewModel
     var body: some View {
         VStack {
             
@@ -19,7 +19,7 @@ struct GameView: View {
                 VStack {
                     
                     List {
-                        ForEach(rootViewModel.searchedGames) { game in
+                        ForEach(gameViewModel.searchedGames) { game in
                             NavigationLink {
                                 GameDetailView(game: game)
                             } label: {
@@ -42,7 +42,7 @@ struct GameView: View {
                 
                 
             }
-            .searchable(text: $rootViewModel.searchTextGame)
+            .searchable(text: $gameViewModel.searchTextGame)
             
             
             
@@ -52,6 +52,6 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(gameViewModel: GameViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
     }
 }

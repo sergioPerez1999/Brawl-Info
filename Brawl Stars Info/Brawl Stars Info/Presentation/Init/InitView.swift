@@ -24,7 +24,7 @@ struct InitView: View {
                     .foregroundStyle(.black)
                 
                 Button("Get Info") {
-                    rootViewModel.getInformation()
+                    rootViewModel.status = .loaded
                 }
                 .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
                 .font(.title3)

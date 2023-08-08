@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var rootViewModel: RootViewModel
+    @ObservedObject var homeViewModel: HomeViewModel
+    
+    
 
     var body: some View {
         VStack {
@@ -23,7 +26,7 @@ struct HomeView: View {
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
-                            Picker("Sort By", selection: $rootViewModel.sortOption) {
+                            Picker("Sort By", selection: $homeViewModel.sortOption) {
                                 Text("Name").tag(SortOptionsEnum.name)
                                 Text("Rarity").tag(SortOptionsEnum.rarity)
                                 Text("Class").tag(SortOptionsEnum.`class`)
@@ -35,7 +38,7 @@ struct HomeView: View {
                         .overlay(RoundedRectangle(cornerRadius: 15)
                                                     .stroke(style: StrokeStyle(lineWidth: 2, dash: [15.0])))
                         .padding()
-                        ForEach(rootViewModel.searchedBrawlers) { brawler in
+                        ForEach(homeViewModel.searchedBrawlers) { brawler in
                             NavigationLink {
                                 BrawlerDetailView(brawler: brawler)
                             } label: {
@@ -59,7 +62,8 @@ struct HomeView: View {
                 
                 
             }
-            .searchable(text: $rootViewModel.searchText)
+            .searchable(text: $homeViewModel.searchText)
+            
             
             
             

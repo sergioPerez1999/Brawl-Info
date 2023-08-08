@@ -43,6 +43,7 @@ struct GameDetailView: View {
                         .fontWeight(.bold)
                         .padding()
                     Text(game.description)
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 
                 Link("For more information...", destination: game.link)
                     .padding()

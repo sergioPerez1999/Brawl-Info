@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Map: Codable, Identifiable {
+struct Map: Codable, Identifiable, Hashable, Equatable {
     
     let id: Int
     let name: String

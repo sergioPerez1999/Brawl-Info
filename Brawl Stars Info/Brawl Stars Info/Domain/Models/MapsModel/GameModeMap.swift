@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct GameModeMap: Codable, Identifiable {
+struct GameModeMap: Codable, Identifiable, Hashable, Equatable {
     let id: Int?
     let name: String
     let imageUrl: URL

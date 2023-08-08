@@ -10,6 +10,8 @@ import Foundation
 
 final class RepositoryImpl: RepositoryProtocol {
     
+    
+    
     private let remoteDataSource: RemoteDataSourceProtocol
     
     init(remoteDataSource: RemoteDataSourceProtocol) {
@@ -23,6 +25,18 @@ final class RepositoryImpl: RepositoryProtocol {
         let information = Information(brawlers: brawlers, maps: maps, games: games)
         
         return information
+    }
+    
+    func getBrawlers() async throws -> [Brawler] {
+        return try await remoteDataSource.getBrawlers().list
+    }
+    
+    func getMaps() async throws -> [Map] {
+        return try await remoteDataSource.getMaps().list
+    }
+    
+    func getGames() async throws -> [Game] {
+        return try await remoteDataSource.getGames().list
     }
     
 }

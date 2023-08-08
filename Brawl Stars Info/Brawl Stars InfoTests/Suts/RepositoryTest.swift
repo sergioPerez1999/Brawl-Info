@@ -32,5 +32,32 @@ var sut: RepositoryProtocol?
         XCTAssertNotNil(information?.games)
         
     }
+    
+    func testRepository_whenGetBrawlersMockRemoteDataSource_expectBrawlers() async throws {
+        
+        let brawlers = try await sut?.getBrawlers()
+        XCTAssertNotNil(brawlers)
+        XCTAssertNotNil(brawlers?.first)
+        XCTAssertEqual(brawlers?.first?.name, "Shelly")
+        
+    }
+    
+    func testRepository_whenGetMapsMockRemoteDataSource_expectMaps() async throws {
+        
+        let maps = try await sut?.getMaps()
+        XCTAssertNotNil(maps)
+        XCTAssertNotNil(maps?.first)
+        XCTAssertEqual(maps?.first?.name, "Devolution")
+        
+    }
+    
+    func testRepository_whenGetGamesMockRemoteDataSource_expectGames() async throws {
+        
+        let games = try await sut?.getGames()
+        XCTAssertNotNil(games)
+        XCTAssertNotNil(games?.first)
+        XCTAssertEqual(games?.first?.name, "Bot Drop")
+        
+    }
 
 }

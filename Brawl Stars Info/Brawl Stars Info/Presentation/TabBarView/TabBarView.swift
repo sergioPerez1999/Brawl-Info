@@ -14,22 +14,25 @@ struct TabBarView: View {
     var body: some View {
         VStack {
             TabView {
-                HomeView()
+                HomeView(homeViewModel: HomeViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
                     .tabItem {
                         Label("Brawlers", systemImage: "person.fill")
                         
                     }
                 
-                MapView()
+                MapView(mapViewModel: MapViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
                     .tabItem {
                         Label("Maps", systemImage: "map.fill")
                         
                     }
-                GameView()
+                GameView(gameViewModel: GameViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
                     .tabItem {
                         Label("Games", systemImage: "gamecontroller.fill")
                     }
-                
+                BattleView(battleViewModel: BattleViewModel(repository: RepositoryImpl(remoteDataSource: RemoteDataSourceImpl())))
+                    .tabItem {
+                        Label("Battle", systemImage: "arrowshape.turn.up.left.fill")
+                    }
                 SettingsView()
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
