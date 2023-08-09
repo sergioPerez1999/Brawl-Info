@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 final class HomeViewModel: ObservableObject {
     
     let repository: RepositoryProtocol

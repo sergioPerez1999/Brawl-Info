@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 @testable import Brawl_Stars_Info
 
 class NetworkFetchingMock: NetworkFetchingProtocol {

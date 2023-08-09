@@ -66,6 +66,7 @@
 		EBC013C42A81056500F3CC89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC013C32A81056500F3CC89 /* HomeViewModel.swift */; };
 		EBC013C62A81087600F3CC89 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC013C52A81087600F3CC89 /* MapViewModel.swift */; };
 		EBC013C82A810BB200F3CC89 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC013C72A810BB200F3CC89 /* GameViewModel.swift */; };
+		EBDEF31A2A83862300062D3C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDEF3192A83862300062D3C /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		EBC013C32A81056500F3CC89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EBC013C52A81087600F3CC89 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		EBC013C72A810BB200F3CC89 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		EBDEF3192A83862300062D3C /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,8 +281,9 @@
 		EB12AE242A79124A00C4CA53 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EB93A7052A79269000DDD74D /* Local */,
-				EB93A6FF2A7923ED00DDD74D /* Remote */,
+				EB93A7002A7923FE00DDD74D /* DataSource */,
+				EB34977A2A7C0FDF0047ABA6 /* Protocols */,
+				EB12AE262A79125C00C4CA53 /* DTO */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -288,13 +291,13 @@
 		EB12AE252A79124E00C4CA53 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EBDEF31B2A83BF9900062D3C /* Repository */,
 				EB4F79DA2A79718F00051AE5 /* Utils */,
-				EB12AE262A79125C00C4CA53 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		EB12AE262A79125C00C4CA53 /* Models */ = {
+		EB12AE262A79125C00C4CA53 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
 				EBAA206E2A7BBC0B00A4AF3C /* GamesModel */,
@@ -302,7 +305,7 @@
 				EBAA20542A7B8F2B00A4AF3C /* MapsModel */,
 				EB68DC142A7A441A00736203 /* BrawlerModel */,
 			);
-			path = Models;
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		EB12AE312A7914D300C4CA53 /* Home */ = {
@@ -404,6 +407,7 @@
 				EBAA20752A7BC51B00A4AF3C /* SortOptionsEnumMap.swift */,
 				EBC013C12A80FC7800F3CC89 /* NumberPlayersEnum.swift */,
 				EB8C860B2A8256F1001B7D7F /* GameModeEnum.swift */,
+				EBDEF3192A83862300062D3C /* Status.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -437,14 +441,6 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		EB93A6FF2A7923ED00DDD74D /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				EB93A7002A7923FE00DDD74D /* DataSource */,
-			);
-			path = Remote;
-			sourceTree = "<group>";
-		};
 		EB93A7002A7923FE00DDD74D /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,16 +448,6 @@
 				EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		EB93A7052A79269000DDD74D /* Local */ = {
-			isa = PBXGroup;
-			children = (
-				EB34977A2A7C0FDF0047ABA6 /* Protocols */,
-				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
-				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		EB98E0322A7D06BB00BCAB14 /* Battle */ = {
@@ -563,6 +549,15 @@
 				EBAAADC82A7CE6FD006FF9F0 /* RepositoryMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EBDEF31B2A83BF9900062D3C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
+				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,6 +705,7 @@
 				EBC013C22A80FC7800F3CC89 /* NumberPlayersEnum.swift in Sources */,
 				EBAA20742A7BC24000A4AF3C /* GameDetailView.swift in Sources */,
 				EB12AE362A791A5600C4CA53 /* RootView.swift in Sources */,
+				EBDEF31A2A83862300062D3C /* Status.swift in Sources */,
 				EB12AE332A7914E200C4CA53 /* HomeView.swift in Sources */,
 				EBAA205A2A7B8FB400A4AF3C /* Map.swift in Sources */,
 				EBAA20642A7BA42B00A4AF3C /* MapCellView.swift in Sources */,

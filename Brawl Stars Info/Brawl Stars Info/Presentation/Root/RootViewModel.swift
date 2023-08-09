@@ -6,11 +6,6 @@
 //
 
 import Foundation
-import Combine
-
-enum Status: Equatable {
-    case primary, loaded, error(error: String)
-}
 
 final class RootViewModel: ObservableObject {
     @Published var status = Status.primary

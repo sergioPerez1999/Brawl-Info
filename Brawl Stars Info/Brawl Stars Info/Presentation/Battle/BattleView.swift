@@ -64,12 +64,19 @@ struct BattleView: View {
                         }
                         .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
                         .pickerStyle(NavigationLinkPickerStyle())
+                        
+                    } header: {
+                        Text("Battle configurations")
+                    }
+                    
+                    Section {
+                        
                         Button("Start Fight") {
                             battleViewModel.startBattle()
                         }
                         
                     } header: {
-                        Text("Battle configurations")
+                        Text("Start battle")
                     }
 
                 }

@@ -6,7 +6,6 @@
 //
 
 import XCTest
-
 @testable import Brawl_Stars_Info
 
 final class RootViewModelTest: XCTestCase {

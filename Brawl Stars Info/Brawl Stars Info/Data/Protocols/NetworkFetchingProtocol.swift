@@ -6,11 +6,9 @@
 //
 
 import Foundation
-import Combine
 
 
 protocol NetworkFetchingProtocol {
-    
     func data(url: URLRequest) async throws  -> (Data, URLResponse)
     
 }

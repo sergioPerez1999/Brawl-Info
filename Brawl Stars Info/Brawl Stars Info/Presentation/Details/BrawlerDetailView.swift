@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BrawlerDetailView: View {
     let brawler: Brawler
-    
+    @State private var animation = false
     var body: some View {
         
         ScrollView {
@@ -28,6 +28,13 @@ struct BrawlerDetailView: View {
                             .clipShape(Circle())
                     } placeholder: {
                         ProgressView()
+                    }
+                    .rotation3DEffect(.degrees(animation ? 360 : 0), axis: (x: 0, y: 0, z: 10))
+                    .offset(y: animation ? 0 : 0)
+                    .onAppear{
+                        withAnimation(.easeInOut(duration: 1).delay(0.5)){
+                            animation.toggle()
+                        }
                     }
                 }
                 VStack{
