@@ -9,9 +9,8 @@ import SwiftUI
 
 struct MapView: View {
     
-    @EnvironmentObject var rootViewModel: RootViewModel
     @ObservedObject var mapViewModel: MapViewModel
-    
+    @State var animationStarted = false
     var body: some View {
         VStack {
             
@@ -53,8 +52,8 @@ struct MapView: View {
                     .navigationTitle("Maps")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
-                        Button("Exit") {
-                            rootViewModel.goToHome()
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            ExitButtonView()
                         }
                     }
                 }

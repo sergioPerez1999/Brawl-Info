@@ -87,7 +87,11 @@ struct BattleView: View {
                         }
 
                 
-                
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        ExitButtonView()
+                    }
+                }
             }
             
         }

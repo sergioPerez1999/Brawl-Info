@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GameView: View {
     
-    @EnvironmentObject var rootViewModel: RootViewModel
     @ObservedObject var gameViewModel: GameViewModel
     var body: some View {
         VStack {
@@ -34,8 +33,8 @@ struct GameView: View {
                     .navigationTitle("Games")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
-                        Button("Exit") {
-                            rootViewModel.goToHome()
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            ExitButtonView()
                         }
                     }
                 }

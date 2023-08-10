@@ -39,6 +39,8 @@ struct TabBarView: View {
                     }
                 
             }
+            .accessibilityLabel("Tab Bar")
+            .accessibilityHint("Tab bar with 5 positions: Brawlers, Maps, Games, Battle and Settings, in order.")
         }
     }
 }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var rootViewModel: RootViewModel
     @ObservedObject var homeViewModel: HomeViewModel
     
     
@@ -33,6 +32,8 @@ struct HomeView: View {
                             }
                             .pickerStyle(SegmentedPickerStyle())
                             .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
+                            .accessibilityLabel("Picker with three options to sort by")
+                            .accessibilityHint("Three positions of a picker: Name, Rarity, Class in order.")
                             
                         }
                         .overlay(RoundedRectangle(cornerRadius: 15)
@@ -43,6 +44,8 @@ struct HomeView: View {
                                 BrawlerDetailView(brawler: brawler)
                             } label: {
                                 BrawlerCellView(brawler: brawler)
+                                    .accessibilityLabel("Brawler Cell")
+                                    .accessibilityHint("Press the cell to navigate to a brawler detail view")
                             }
                             
                         }
@@ -54,9 +57,11 @@ struct HomeView: View {
                     .navigationTitle("Brawlers")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
-                        Button("Exit") {
-                            rootViewModel.goToHome()
+                        
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            ExitButtonView()
                         }
+                        
                     }
                 }
                 

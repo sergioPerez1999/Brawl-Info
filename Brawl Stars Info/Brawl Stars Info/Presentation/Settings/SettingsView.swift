@@ -10,20 +10,20 @@ import SwiftUI
 struct SettingsView: View {
     
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @EnvironmentObject var rootViewModel: RootViewModel
     
     var body: some View {
         NavigationStack {
             List{
                 HStack{
                     Toggle("Dark Mode", isOn: $isDarkMode)
+                        .tint(.red)
                 }
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Exit") {
-                    rootViewModel.goToHome()
+                ToolbarItem(placement: .navigationBarLeading) {
+                    ExitButtonView()
                 }
             }
         }

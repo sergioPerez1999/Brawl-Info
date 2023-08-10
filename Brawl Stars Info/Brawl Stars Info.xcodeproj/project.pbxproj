@@ -42,6 +42,7 @@
 		EB93A7242A79385300DDD74D /* Gadget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A7232A79385300DDD74D /* Gadget.swift */; };
 		EB98E0342A7D0CE900BCAB14 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98E0332A7D0CE900BCAB14 /* BattleView.swift */; };
 		EB98E0372A7D112800BCAB14 /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98E0362A7D112800BCAB14 /* BattleViewModel.swift */; };
+		EB9EBF2D2A84DD890070C8B8 /* ExitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBF2C2A84DD890070C8B8 /* ExitButtonView.swift */; };
 		EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20552A7B8F3F00A4AF3C /* MapList.swift */; };
 		EBAA20582A7B8F5700A4AF3C /* GameModeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20572A7B8F5700A4AF3C /* GameModeMap.swift */; };
 		EBAA205A2A7B8FB400A4AF3C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA20592A7B8FB400A4AF3C /* Map.swift */; };
@@ -125,6 +126,7 @@
 		EB93A7232A79385300DDD74D /* Gadget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gadget.swift; sourceTree = "<group>"; };
 		EB98E0332A7D0CE900BCAB14 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
 		EB98E0362A7D112800BCAB14 /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModel.swift; sourceTree = "<group>"; };
+		EB9EBF2C2A84DD890070C8B8 /* ExitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButtonView.swift; sourceTree = "<group>"; };
 		EBAA20552A7B8F3F00A4AF3C /* MapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapList.swift; sourceTree = "<group>"; };
 		EBAA20572A7B8F5700A4AF3C /* GameModeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeMap.swift; sourceTree = "<group>"; };
 		EBAA20592A7B8FB400A4AF3C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		EB12AE1E2A7911BD00C4CA53 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EB9EBF2B2A84DD7A0070C8B8 /* ExitButton */,
 				EB98E0322A7D06BB00BCAB14 /* Battle */,
 				EBAA20682A7BBBCA00A4AF3C /* Game */,
 				EBAA205E2A7BA3D700A4AF3C /* Map */,
@@ -281,6 +284,7 @@
 		EB12AE242A79124A00C4CA53 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EB9EBF2A2A84B98F0070C8B8 /* Repository */,
 				EB93A7002A7923FE00DDD74D /* DataSource */,
 				EB34977A2A7C0FDF0047ABA6 /* Protocols */,
 				EB12AE262A79125C00C4CA53 /* DTO */,
@@ -291,7 +295,7 @@
 		EB12AE252A79124E00C4CA53 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				EBDEF31B2A83BF9900062D3C /* Repository */,
+				EBDEF31B2A83BF9900062D3C /* Prootocols */,
 				EB4F79DA2A79718F00051AE5 /* Utils */,
 			);
 			path = Domain;
@@ -330,6 +334,7 @@
 		EB34977A2A7C0FDF0047ABA6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */,
 				EB34977B2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift */,
 			);
 			path = Protocols;
@@ -444,7 +449,6 @@
 		EB93A7002A7923FE00DDD74D /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				EB93A7012A79242200DDD74D /* RemoteDataSourceProtocol.swift */,
 				EB93A7032A79243100DDD74D /* RemoteDataSourceImpl.swift */,
 			);
 			path = DataSource;
@@ -457,6 +461,22 @@
 				EB98E0332A7D0CE900BCAB14 /* BattleView.swift */,
 			);
 			path = Battle;
+			sourceTree = "<group>";
+		};
+		EB9EBF2A2A84B98F0070C8B8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EB9EBF2B2A84DD7A0070C8B8 /* ExitButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EBF2C2A84DD890070C8B8 /* ExitButtonView.swift */,
+			);
+			path = ExitButton;
 			sourceTree = "<group>";
 		};
 		EBAA20542A7B8F2B00A4AF3C /* MapsModel */ = {
@@ -551,13 +571,12 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		EBDEF31B2A83BF9900062D3C /* Repository */ = {
+		EBDEF31B2A83BF9900062D3C /* Prootocols */ = {
 			isa = PBXGroup;
 			children = (
-				EB93A7062A79269F00DDD74D /* RepositoryImpl.swift */,
 				EB93A7082A7926B500DDD74D /* RepositoryProtocol.swift */,
 			);
-			path = Repository;
+			path = Prootocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,6 +744,7 @@
 				EB93A7092A7926B500DDD74D /* RepositoryProtocol.swift in Sources */,
 				EB34977C2A7C0FE80047ABA6 /* NetworkFetchingProtocol.swift in Sources */,
 				EBAA20562A7B8F3F00A4AF3C /* MapList.swift in Sources */,
+				EB9EBF2D2A84DD890070C8B8 /* ExitButtonView.swift in Sources */,
 				EB4F79E22A79770400051AE5 /* BrawlerDetailView.swift in Sources */,
 				EB8C860C2A8256F1001B7D7F /* GameModeEnum.swift in Sources */,
 				EB68DC192A7A4A6700736203 /* TabBarView.swift in Sources */,

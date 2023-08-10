@@ -34,20 +34,29 @@ struct BrawlerCellView: View {
                         .fontWeight(.bold)
                         .font(.system(size: 18))
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
+                        .accessibilityLabel("Brawler name")
+                        .accessibilityHint("\(brawler.name)")
                     Text(brawler.description)
                         .font(.system(size: 14))
                         .lineLimit(2)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
+                        .accessibilityLabel("Brawler description")
+                        .accessibilityHint("\(brawler.description)")
                     
                     HStack  {
                         VStack (alignment: .leading){
                             Text("Class: \(brawler.class.name)")
                                 .font(.system(size: 14))
+                                .accessibilityLabel("Brawler class name")
+                                .accessibilityHint("\(brawler.class.name)")
                             HStack {
                                 Text("Rarity: ")
                                     .font(.system(size: 14))
+                                    
                                 Text(brawler.rarity.name)
                                     .font(.system(size: 14))
+                                    .accessibilityLabel("Brawler rarity")
+                                    .accessibilityHint("\(brawler.rarity.name)")
                             }
                             
                         }
@@ -57,11 +66,13 @@ struct BrawlerCellView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
+                            .accessibilityLabel("Brawler rarity image")
                         
                     }
                     
                 }
                 .padding(5)
+                
 
             }
         }
